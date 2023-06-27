@@ -3,13 +3,16 @@ import { CommonModule } from '@angular/common';
 
 import { MainPageComponent } from './pages/main-page.component';
 import { ListComponent } from './components/list/list.component';
+import { AddCharComponent } from './components/add-char/add-char.component';
+import { FormsModule } from '@angular/forms';
 
 
 
 @NgModule({
-  declarations: [MainPageComponent, ListComponent],
+  declarations: [MainPageComponent, ListComponent, AddCharComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     MainPageComponent
